@@ -1,3 +1,4 @@
+/*
 import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
@@ -32,8 +33,8 @@ const Timeline = () => {
     }
   }
 
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
+  // snap back to beginning of scroll when window is resized
+  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
@@ -44,20 +45,22 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Us</SectionTitle>
-      <SectionText>Guided by a culture of excellence, we are driven by a passion for building quality softwares across different industries. From healthcare sites to crypto exchanges, we build these using modern development technologies, approaches and best practices. As an organization, we also have Research an Development interests in emerging technologies including Artificial Intelligence and Blockchain.</SectionText>
+      <SectionTitle>About Me</SectionTitle>
+      <SectionText>
+        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
-            <CarouselMobileScrollNode key={index} final={index == TOTAL_CAROUSEL_COUNT - 1}>
+            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onclick={(e) => handleClick(e, index)}
+                onClick={(e) => handleClick(e, index)}
               >
-                <CarouselItemTitle>
-                  {item.year}
+              <CarouselItemTitle>
+                {item.year}
                 <CarouselItemImg
                     width="208"
                     height="6"
@@ -88,8 +91,8 @@ const Timeline = () => {
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
-                </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+              </CarouselItemTitle>
+              <CarouselItemText>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
@@ -97,7 +100,7 @@ const Timeline = () => {
       </CarouselContainer>
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
-          <CarouselButton
+          <CarouselButton 
             key={index}
             index={index}
             active={activeItem}
@@ -108,8 +111,10 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
+      <SectionDivider />
     </Section>
   );
 };
 
 export default Timeline;
+*/

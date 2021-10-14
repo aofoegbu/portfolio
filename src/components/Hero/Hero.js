@@ -3,7 +3,13 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+import { useRouter } from 'next/router';
 
+// const router = useRouter()
+// const handleClick = (e, path) => {
+//   e.preventDefault();
+//   router.push(path);
+// }
 const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
@@ -12,9 +18,9 @@ const Hero = (props) => (
         Ogelo Technologies
       </SectionTitle>
       <SectionText>
-        Welcome to Ogelo technologies, I am a Frontend developer with a passion for building quality web apps across different industries. From  healthcare sites to crypto exchanges, we build these using modern development technologies, approaches and best practices. 
+      We build test-driven web applications and softwares that meet user needs using  modern technologies and following best practices. Contact us today for your quality softwares!
       </SectionText>
-      <Button onclick={() => window.location = '#projects'}>Learn More</Button>
+      <Button onclick={() => window.location.href='#about'}>Learn More</Button>
     </LeftSection>
   </Section>
 );
