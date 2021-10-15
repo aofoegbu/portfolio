@@ -13,8 +13,12 @@ const Footer = () => {
         <LinkItem href="tel:234-813-159-8390">234-813-159-8390</LinkItem>
         </LinkColumn>
         <LinkColumn>
-        <LinkTitle>Call</LinkTitle>
+        <LinkTitle>Email</LinkTitle>
         <LinkItem href="mailto:augustineofoegbu1@gmail.com">augustineofoegbu1@gmail.com</LinkItem>
+        </LinkColumn>
+        <LinkColumn style={{marginLeft: 30}}>
+        <LinkTitle>Office Address</LinkTitle>
+        <LinkItem href="">#45 Umunahu Uratta, Owerri Imo State, Nigeria</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
