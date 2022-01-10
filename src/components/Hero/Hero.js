@@ -15,10 +15,10 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Welcome to <br />
-        Ogelo Technologies
+        Ogelo's Page
       </SectionTitle>
       <SectionText>
-      We build test-driven web applications and softwares that meet user needs using  modern technologies and following best practices. Contact us today for your quality softwares!
+      Augustine "Ogelo" Ofoegbu is a Frontend developer with good understanding of Reactjs and its concepts including  Components, Hooks, Promises, Props and State Management; to go with a First Class Honours Computer Science degree.
       </SectionText>
       <Button onclick={() => window.location.href='#about'}>Learn More</Button>
     </LeftSection>

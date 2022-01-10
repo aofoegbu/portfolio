@@ -10,7 +10,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
         <LinkTitle>Call</LinkTitle>
-        <LinkItem href="tel:234-813-159-8390">234-813-159-8390</LinkItem>
+        <LinkItem href="tel:2348109652131">234 810 965 2131</LinkItem>
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
@@ -18,7 +18,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn style={{marginLeft: 30}}>
         <LinkTitle>Office Address</LinkTitle>
-        <LinkItem href="">#45 Umunahu Uratta, Owerri Imo State, Nigeria</LinkItem>
+        <LinkItem href="">#21 Umunahu Uratta, Owerri Imo State, Nigeria</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>

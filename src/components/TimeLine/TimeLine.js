@@ -45,7 +45,7 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Us</SectionTitle>
-      <SectionText>Guided by a culture of excellence, we are driven by a passion for building quality softwares across different industries. From healthcare sites to crypto exchanges, we build these using modern development technologies, approaches and best practices. As an organization, we also have Research an Development interests in emerging technologies including Artificial Intelligence and Blockchain.</SectionText>
+      <SectionText>Guided by a culture of excellence, i'm are driven by a passion to build quality softwares across different industries - from healthcare sites to crypto exchanges, using modern development technologies, approaches and best practices. </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
